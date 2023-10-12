@@ -13,18 +13,14 @@ public class StudyMateLoginPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(name = "name")
-    public WebElement email;
     @FindBy(name = "email")
+    public WebElement email;
+    @FindBy(name = "password")
     public WebElement password;
     @FindBy(xpath = "//button[text()='Log in']")
     public WebElement loginBtn;
 
-    @Test
-    public void test(){
-        driver = Driver.getDriver();
-        driver.get();
-    }
+
 
 
 

@@ -2,6 +2,7 @@ package steps;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import utilities.Driver;
 
 public class Hooks {
 
@@ -12,6 +13,7 @@ public class Hooks {
     }
     @After
     public void afterScenario(){
+        Driver.closeDriver();
         System.out.println("After");
         System.out.println();
     }
