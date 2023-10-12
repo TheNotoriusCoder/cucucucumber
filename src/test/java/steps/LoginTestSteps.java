@@ -44,6 +44,6 @@ public class LoginTestSteps {
         String actualUrl = driver.getCurrentUrl();
         Assert.assertEquals(expectedUrl,actualUrl);
         System.out.println("successful login");
-
+        System.out.println("It is Cucumber project");
     }
 }

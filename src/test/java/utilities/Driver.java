@@ -10,8 +10,8 @@ public class Driver {
     static WebDriver driver;
 
     public static WebDriver getDriver(){
-        System.setProperty("webdriver.chrome.driver",
-                "/Users/nicolaijurea/School/Codewise/SeleniumAutomationClassRoom/SeleniumFirstProject/src/test/drivers/chromedriver");
+//        System.setProperty("webdriver.chrome.driver",
+//                "/Users/nicolaijurea/School/Codewise/SeleniumAutomationClassRoom/SeleniumFirstProject/src/test/drivers/chromedriver");
 
         if(driver != null){
             return driver;
