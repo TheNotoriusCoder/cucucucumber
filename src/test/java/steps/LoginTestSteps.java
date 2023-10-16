@@ -5,6 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pages.StudyMateLoginPage;
 import utilities.Config;
@@ -44,6 +45,14 @@ public class LoginTestSteps {
         String actualUrl = driver.getCurrentUrl();
         Assert.assertEquals(expectedUrl,actualUrl);
         System.out.println("successful login");
-
     }
+    @Then("user should not be logged in")
+    public void user_should_not_be_logged_in() {
+      String expectedMessage = "Email is not valid!";
+      String actualMessage = loginPage.errorMessage.getText();
+        System.out.println("user is trying to log in");
+      Assert.assertEquals("the error is not displayed. ",expectedMessage,actualMessage);
+        System.out.println("user is logged in");
+    }
+
 }

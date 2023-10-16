@@ -19,6 +19,8 @@ public class StudyMateLoginPage {
     public WebElement password;
     @FindBy(xpath = "//button[text()='Log in']")
     public WebElement loginBtn;
+    @FindBy(xpath = "//span[text()='Email is not valid!']")
+    public WebElement errorMessage;
 
 
 
