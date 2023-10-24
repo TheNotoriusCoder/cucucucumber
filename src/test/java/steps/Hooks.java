@@ -11,11 +11,11 @@ public class Hooks {
         System.out.println("Before");
         System.out.println();
     }
-    @After
-    public void afterScenario(){
-        Driver.closeDriver();
-        System.out.println("After");
-        System.out.println();
-    }
+//    @After
+//    public void afterScenario(){
+//        Driver.closeDriver();
+//        System.out.println("After");
+//        System.out.println();
+//    }
 
 }

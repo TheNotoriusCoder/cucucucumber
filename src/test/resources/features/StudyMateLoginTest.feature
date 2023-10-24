@@ -22,3 +22,4 @@ Feature: all login test scenarios are in this file
       | huisos@gmail   | shjfba34 |
       | sindy@gmail    | ghfg     |
       | john12         | john123  |
+

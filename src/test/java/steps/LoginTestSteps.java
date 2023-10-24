@@ -30,7 +30,7 @@ public class LoginTestSteps {
     @When("user enters password {string} to the password field")
     public void user_enters_password_to_the_password_field(String password){
         loginPage.password.sendKeys(password);
-        System.out.println("user enters password: " + Config.getProperty("password"));
+        System.out.println("user enters password: " + password);
     }
     @Then("user performs click action on the login button")
     public void user_performs_click_action_on_the_login_button() {
