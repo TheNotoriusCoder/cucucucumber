@@ -2,6 +2,8 @@ package api;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import entities.CustomResponses;
+import entities.RequestBody;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -37,7 +39,5 @@ public class CashwiseReportChartTest {
 
         System.out.println("category id : " + customResponse.getCategory_id());
         System.out.println("created: " + customResponse.getCreated());
-
-
     }
 }

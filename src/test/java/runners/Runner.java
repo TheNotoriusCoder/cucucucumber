@@ -19,7 +19,7 @@ feature files are written correctly without actually running steps definitions (
         plugin = {"html:target/cucumber.html", "json:target/report.json"},
         features = "src/test/resources/features",
         glue = "steps",
-        tags = "@LoginNegative",
+        tags = "@seller",
         dryRun = false
 )
 public class Runner {
